@@ -2,23 +2,6 @@ package models;
 
 public class Calculate {
     int first, second;
-
-    public int getFirst() {
-        return first;
-    }
-
-    public int getSecond() {
-        return second;
-    }
-
-    public void setFirst(int first) {
-        this.first = first;
-    }
-
-    public void setSecond(int second) {
-        this.second = second;
-    }
-
     public Calculate(int first, int second) {
         this.first = first;
         this.second = second;

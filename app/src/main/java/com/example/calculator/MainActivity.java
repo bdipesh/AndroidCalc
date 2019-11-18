@@ -130,7 +130,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                   operator = "";
                   calculate.setText(String.valueOf(result));
               }else if(("-").equals(operator)) {
-
                   int result = cal.Subract();
                   operator = "";
                   calculate.setText(String.valueOf(result));
