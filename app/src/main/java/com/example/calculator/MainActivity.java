@@ -65,44 +65,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
       switch (view.getId()){
           case R.id.one:
-              calculate.setText("");
               this.DataSet("1");
               break;
           case R.id.two:
-              calculate.setText("");
               this.DataSet("2");
               break;
           case R.id.three:
-              calculate.setText("");
               this.DataSet("3");
               break;
           case R.id.four:
-              calculate.setText("");
               this.DataSet("4");
-              calculate.append("4");
               break;
           case R.id.five:
-              calculate.setText("");
               this.DataSet("5");
               break;
           case R.id.six:
-              calculate.setText("");
               this.DataSet("6");
               break;
           case R.id.seven:
-              calculate.setText("");
               this.DataSet("7");
               break;
           case R.id.eight:
-              calculate.setText("");
               this.DataSet("8");
               break;
           case R.id.nine:
-              calculate.setText("");
               this.DataSet("9");
               break;
           case R.id.zero:
-              calculate.setText("");
               this.DataSet("0");
               break;
           case R.id.minus:
@@ -127,23 +116,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
               break;
           case R.id.equal:
               calculate.setText("");
+              Calculate cal = new Calculate(Integer.parseInt(first), Integer.parseInt(second));
               if(("+").equals(operator)) {
-                  Calculate cal = new Calculate(Integer.parseInt(first), Integer.parseInt(second));
                   int result = cal.Add();
                   operator = "";
                   calculate.setText(String.valueOf(result));
               }else if(("/").equals(operator)) {
-                  Calculate cal = new Calculate(Integer.parseInt(first), Integer.parseInt(second));
                   int result = cal.Divide();
                   operator = "";
                   calculate.setText(String.valueOf(result));
               }else if(("*").equals(operator)) {
-                  Calculate cal = new Calculate(Integer.parseInt(first), Integer.parseInt(second));
                   int result = cal.Multiply();
                   operator = "";
                   calculate.setText(String.valueOf(result));
               }else if(("-").equals(operator)) {
-                  Calculate cal = new Calculate(Integer.parseInt(first), Integer.parseInt(second));
+
                   int result = cal.Subract();
                   operator = "";
                   calculate.setText(String.valueOf(result));
